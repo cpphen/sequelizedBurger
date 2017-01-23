@@ -1,0 +1,29 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "burger assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henhen87/Burger.git"
+  },
+  "keywords": [
+    "henhen"
+  ],
+  "author": "hen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henhen87/Burger/issues"
+  },
+  "homepage": "https://github.com/henhen87/Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.12.0"
+  }
+}

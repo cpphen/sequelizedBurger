@@ -1,0 +1,70 @@
+
+html{
+	background-color: #ffff33;
+}
+
+.header{
+	width: 100%;
+}
+
+.lists{
+	width: 100%;
+	overflow: auto;
+	/*display: inline-block;*/
+}
+#img{
+	margin-left: 39%;
+}
+#h1{
+	margin-left: 43%;
+}
+.bottom{
+	width: 100%;
+}
+.ulOne{
+	width: 35%;
+	float: left;
+	margin-left: 300px;
+	padding: 10px;
+}
+.ulTwo{
+	width: 35%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 55px;
+	/*margin-left: -150px;*/
+	/*padding-top: 15px;*/
+}
+li{
+	padding: 5px;
+}
+.create-burger{
+	width: 100%;
+	margin-left: 45%;
+}
+button{
+	margin-left: 50px;
+}
+h2{
+	width: 100%;
+	margin-left: 45.5%;
+	/*text-align: center;*/
+}
+form{
+	display: inline-block;
+	margin-left: 20px;
+	/*padding: 20px;*/
+}
+.bName{
+	background-color: white;
+	width: 200px;
+	height: 100px;
+	display: inline-block;
+	margin-bottom: 10px;
+	/*text-align: center;*/
+}
+.inner{
+	text-align: center;
+	padding-top: 40px;
+}
