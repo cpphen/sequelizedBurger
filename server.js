@@ -8,6 +8,7 @@ var app = express();
 
 var PORT = process.env.PORT || 3000;
 
+var theDatabase = require('./models');
 
 app.use(express.static(process.cwd() + '/public'));
 
@@ -26,7 +27,11 @@ var routes = require('./controllers/burgers_controller');
 
 app.use('/', routes);
 
-app.listen(PORT);
+theDatabase.sequelize.sync().then(function(){
+	app.listen(PORT, function(){
+		console.log("Connected on Port: " + PORT);
+	});
+});
 
 // var port = 3000;
 
