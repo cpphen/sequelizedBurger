@@ -42,6 +42,24 @@ router.put('/burgers/update/:id', function(req, res){
 	});
 });
 
+router.post('/burgers/update/:id', function(req, res){
+	// var id = req.params.id;
+
+	// // var devour = req.body.devoured;
+	// burgers.update({ devoured: req.body.devoured }, condition, function(){
+	// 	res.redirect('/monster-burgers');
+	// });
+	theDatabase.burgers.update({
+		devoured: req.body.devoured
+	}, {
+		where: {
+			id: req.params.id
+		}
+	}).then(function(){
+		res.redirect('/monster-burgers');
+	});
+});
+
 router.post('/burgers/create', function(req, res){
 	// burgers.make("burger_name", req.body.burger, function(){
 	// 	res.redirect('/monster-burgers');
